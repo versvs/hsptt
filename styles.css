@@ -1,0 +1,102 @@
+#navbar-toggle-cbox:checked ~ .collapse {
+    display:block;
+}
+
+#navbar-toggle-cbox {
+   display: none;
+}
+
+
+/**
+ *
+ * Reset and generic stuff
+ */
+
+* {
+	padding: 0;
+	margin: 0;
+  font-family: 'Roboto', sans-serif;}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+.hidden {
+	content: " ";
+}
+
+
+
+body {
+  padding: 0;
+  margin: 0;
+}
+header {
+  width: 100%;
+  height: 4em;
+  background-color: #222;
+  color: #eee;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  padding: 0.4em 1em 0.1em 1em;
+}
+
+  header h2 {
+    font-size: 1em;
+    font-weight:200;
+  }
+
+section {
+  clear: both;
+  margin: 6em auto 6em;
+
+}
+
+  table {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: auto;
+    text-align: center;
+  }
+  section .row {
+    width: 100%;
+    clear: both;
+  }
+
+  section .row.odd {
+    background-color: #ccc;
+  }
+
+  section .row.even {
+    background-color: #aaa;
+  }
+
+  section .counter {
+    font-size: 5em;
+  }
+
+footer {
+  width: 100%;
+  clear: both;
+  background-color: #999;
+  padding: 5em;
+  text-align: center;
+}
