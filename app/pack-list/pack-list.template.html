@@ -1,0 +1,20 @@
+<div ng-repeat="pack in $ctrl.packList" class="row pack-id-{{pack.id}}">
+  <div class="su-col-edge-4">
+    <div class="su-box">
+      <img src="{{pack.art}}" alt="{{pack.fullname}}">
+      <p class="{{pack.name}}">{{pack.name}}</p>
+      <p>{{pack.fullname}}</p>
+    </div>
+  </div>
+  <div class="su-col-4">
+    <div class="su-box">
+      {{pack.counter}}
+    </div>
+  </div>
+  <div class="su-col-edge-4">
+    <div class="su-box">
+      <button ng-click="pack.counter = pack.counter + 1" class="no-legendary">No Legendary</button>
+      <button ng-click="pack.counter = 0" class="legendary">Legendary</button>
+    </div>
+  </div>
+</div>
