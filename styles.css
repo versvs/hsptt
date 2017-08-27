@@ -42,19 +42,21 @@
 	content: " ";
 }
 
-
-
 body {
   padding: 0;
   margin: 0;
 }
-header {
 
+article {
+  margin-top: 6em;
 }
-
-  header h2 {
-    font-size: 1em;
+  article h2.row {
+    font-size: 2em;
+    margin: 0 auto;
     font-weight:200;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
   }
 
 section {
@@ -68,6 +70,10 @@ section {
     width: auto;
     text-align: center;
   }
+    table th {
+      display: block;
+      text-align: center;
+    }
   section .row {
     width: 100%;
     clear: both;
