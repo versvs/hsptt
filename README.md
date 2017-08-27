@@ -13,7 +13,7 @@ hsptt is free software under the Apache License 2.0. Full text of this license m
 HSPTT uses the following libraries:
 
 * AngularJS 1.6.5, under the MIT License, Copyright (c) 2010-2017 Google Inc.
-* Suave-UI 0.3.1, under the MIT License, Copyright (c) 2014 Semyon Vyskubov
+* Bootstrap 4.0.0 Beta, under the MIT License, Copyright 2017, Twitter & The Bootstrap Authors
 
 Regarding Hearthstone:
 

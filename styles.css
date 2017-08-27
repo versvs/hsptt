@@ -49,14 +49,7 @@ body {
   margin: 0;
 }
 header {
-  width: 100%;
-  height: 4em;
-  background-color: #222;
-  color: #eee;
-  position: fixed;
-  top: 0;
-  z-index: 9999;
-  padding: 0.4em 1em 0.1em 1em;
+
 }
 
   header h2 {
@@ -71,7 +64,6 @@ section {
 }
 
   table {
-    max-width: 1000px;
     margin: 0 auto;
     width: auto;
     text-align: center;
