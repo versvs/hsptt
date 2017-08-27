@@ -1,38 +1,47 @@
 <!doctype html>
-<html ng-app="hspttApp">
+<html lang="en" ng-app="hspttApp">
   <head>
-    <!-- Suavi UI and Angular css and js files -->
-    <link rel="stylesheet" href="lib/suave-ui/dist/styles.min.css" />
+    <!-- meta headers -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Jose Alcántara">
+
+    <!-- general styling -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Angular JS 1.6.5 -->
     <script src="lib/angular.min.js"></script>
-    <script src="lib/suave-ui/dist/app.min.js"></script>
+    <!-- Bootstrap 4.0.0 beta -->
+    <script src="lib/bootstrap.min.css"></script>
+    <script src="lib/bootstrap.min.js"></script>
+
     <!-- Deck Types Controller -->
     <script src="app/app.module.js"></script>
     <!-- modules need to be loaded before their components -->
     <script src="app/pack-list/pack-list.module.js"></script>
     <script src="app/pack-list/pack-list.component.js"></script>
 
+    <!-- Google web font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-    <!-- loading Suave UI into our angular app -->
-    <script>
-        angular.element(document).ready(function() {
-            angular.bootstrap(document, ['hearthstonepitytimertracker', 'suave-ui']);
-        });
-    </script>
   </head>
-  
-  <body su-grid="" class="">
-    <header>
-      <h1 class="">
-      HearthStone Pity Timer Tracker
-      </h1>
-    </header>
 
-    <article>
-      <pack-list></pack-list>
+  <body class="">
+
+    <article class="container">
+      <header>
+        <h1>Hearthstone Pity Timer Tracker</h1>
+        <h2>Keep track of all your pity timers in one place</h2>
+      </header>
+
+      <section>
+        <pack-list></pack-list>
+      </section>
+
+      <footer>
+        Developed by Versvs with AngularJS.
+      </footer>
     </article>
-
-    <footer>
-      Developed by Versvs with AngularJS and Suave UI.
-    </footer>
   </body>
 </html>
