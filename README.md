@@ -1,8 +1,8 @@
 # hsptt
 
-Hearthstone Pity Timer Tracker (hsptt) v0.1
+Hearthstone Pity Timer Tracker (hsptt) v0.2-SNAPSHOT
 
-#License
+# License
 
 Copyrigt (c) 2017, Jose Alcántara, http://www.versvs.net
 
