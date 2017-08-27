@@ -13,14 +13,15 @@
     <!-- Angular JS 1.6.5 -->
     <script src="lib/angular.min.js"></script>
     <!-- Bootstrap 4.0.0 beta -->
-    <script src="lib/bootstrap.min.css"></script>
-    <script src="lib/bootstrap.min.js"></script>
+    <link href="lib/bootstrap.min.css" rel="stylesheet">
 
     <!-- Deck Types Controller -->
     <script src="app/app.module.js"></script>
     <!-- modules need to be loaded before their components -->
     <script src="app/pack-list/pack-list.module.js"></script>
     <script src="app/pack-list/pack-list.component.js"></script>
+    <script src="app/navigation/navigation.module.js"></script>
+    <script src="app/navigation/navigation.component.js"></script>
 
     <!-- Google web font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -28,12 +29,14 @@
   </head>
 
   <body class="">
+    <navigation></navigation>
+
 
     <article class="container">
       <header>
-        <h1>Hearthstone Pity Timer Tracker</h1>
         <h2>Keep track of all your pity timers in one place</h2>
       </header>
+
 
       <section>
         <pack-list></pack-list>
@@ -43,5 +46,9 @@
         Developed by Versvs with AngularJS.
       </footer>
     </article>
+
+    <!-- at the end to avoid blocking page load -->
+    <script src="lib/bootstrap.min.js"></script>
+
   </body>
 </html>
