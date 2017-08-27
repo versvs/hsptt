@@ -1,20 +1,39 @@
-<div ng-repeat="pack in $ctrl.packList" class="row pack-id-{{pack.id}}">
-  <div class="su-col-edge-4">
-    <div class="su-box">
-      <img src="{{pack.art}}" alt="{{pack.fullname}}">
-      <p class="{{pack.name}}">{{pack.name}}</p>
-      <p>{{pack.fullname}}</p>
-    </div>
-  </div>
-  <div class="su-col-4">
-    <div class="su-box">
-      {{pack.counter}}
-    </div>
-  </div>
-  <div class="su-col-edge-4">
-    <div class="su-box">
-      <button ng-click="increment(pack)" class="no-legendary">No Legendary</button>
-      <button ng-click="legendary(pack)" class="legendary">Legendary</button>
-    </div>
-  </div>
+<div class="pack-list">
+
+  <table class="container">
+    <thead class="row">
+        <tr class="col-4">
+          <th>Pack Type</th>
+        </tr>
+      <tr class="col-2">
+        <th>Packs since last legendary</th>
+      </tr>
+      <tr class="col-6">
+        <th>If you open a pack and dont get a Legendary, press the No Legendary button to increment the counter</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="pack in $ctrl.packList" class="row clear pack-id-{{pack.id}} {{pack.oddity}}">
+        <td class="col-4">
+          <div class="">
+            <img class="" src="{{pack.art}}" alt="{{pack.fullname}}">
+            <p class="{{pack.name}}">{{pack.name}}</p>
+            <p>{{pack.fullname}}</p>
+          </div>
+        </td>
+        <td class="col-2">
+          <p class="counter">
+            {{pack.counter}}
+          </p>
+        </td>
+        <td class="col-6">
+          <p>
+              As a maximum, in {{40 - pack.counter}} packs from {{pack.name}} you will a legendary card.
+          </p>
+          <button ng-click="increment(pack)" class="no-legendary">No Legendary</button>
+          <button ng-click="legendary(pack)" class="legendary">Legendary</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>

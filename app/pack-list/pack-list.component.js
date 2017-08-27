@@ -5,6 +5,7 @@ angular.
   module('packList').
   component('packList', {
     templateUrl: 'app/pack-list/pack-list.template.html',
+    styleUrls: ['app/pack-list/pack-list.css'],
     controller: function PackListController($http, $scope) {
       var self = this;
       self.orderProp = 'id';
@@ -19,8 +20,14 @@ angular.
             self.packList[i].counter = parseInt(localStorage.getItem(self.packList[i].name));
             console.log("Type of stored counter: " + typeof self.packList[i].name);
             console.log("iterating thru packList");
-
           };
+          // add `even` or `odd` element to elements in packList, to ease the styling
+          if (self.packList[i].id % 2) {
+            self.packList[i].oddity = "odd";
+          } else {
+            self.packList[i].oddity = "even";
+          }
+
         }
       });
       $scope.increment = function(pack) {
