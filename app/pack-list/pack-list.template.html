@@ -1,20 +1,38 @@
-<div ng-repeat="pack in $ctrl.packList" class="row pack-id-{{pack.id}}">
-  <div class="su-col-edge-4">
-    <div class="su-box">
-      <img src="{{pack.art}}" alt="{{pack.fullname}}">
-      <p class="{{pack.name}}">{{pack.name}}</p>
-      <p>{{pack.fullname}}</p>
-    </div>
-  </div>
-  <div class="su-col-4">
-    <div class="su-box">
-      {{pack.counter}}
-    </div>
-  </div>
-  <div class="su-col-edge-4">
-    <div class="su-box">
-      <button ng-click="increment(pack)" class="no-legendary">No Legendary</button>
-      <button ng-click="legendary(pack)" class="legendary">Legendary</button>
-    </div>
-  </div>
-</div>
+<table>
+  <thead>
+    <tr>
+      <th>
+        Pack type
+      </th>
+      <th>
+        Packs opened since last legendary from that set
+      </th>
+      <th>
+        Buttons
+      </th>
+    </tr>
+  </thead>
+  <tbody class="packList">
+    <tr ng-repeat="pack in $ctrl.packList" class="row clear pack-id-{{pack.id}} {{pack.oddity}}">
+      <td class="">
+        <div class="">
+          <img class="" src="{{pack.art}}" alt="{{pack.fullname}}">
+          <p class="{{pack.name}}">{{pack.name}}</p>
+          <p>{{pack.fullname}}</p>
+        </div>
+      </td>
+      <td class="">
+        <div class="counter">
+          {{pack.counter}}
+        </div>
+      </td>
+      <td class="">
+        <div class="">
+          <p>Press the No Legendary button to increment the counter from {{pack.name}} packs towards the pity timer</p>
+          <button ng-click="increment(pack)" class="no-legendary">No Legendary</button>
+          <button ng-click="legendary(pack)" class="legendary">Legendary</button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+<table>
