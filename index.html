@@ -14,6 +14,8 @@
     <script src="lib/angular.min.js"></script>
     <!-- Bootstrap 4.0.0 beta -->
     <link href="lib/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
 
     <!-- Deck Types Controller -->
     <script src="app/app.module.js"></script>
@@ -22,6 +24,8 @@
     <script src="app/pack-list/pack-list.component.js"></script>
     <script src="app/navigation/navigation.module.js"></script>
     <script src="app/navigation/navigation.component.js"></script>
+    <script src="app/page-footer/page-footer.module.js"></script>
+    <script src="app/page-footer/page-footer.component.js"></script>
 
     <!-- Google web font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -45,14 +49,8 @@
         <pack-list></pack-list>
       </section>
 
-      <footer id="footer">
-        <p>
-          HearthStone Pity Timer Tracker is well... how to explain, after all, the pity timer doesn't offially exists, does it?
-        </p>
-        <p>
-          Programmed by Versvs with <a target="_blank" href="https://angularjs.org">AngularJS</a> and <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>.
-        </p>
-      </footer>
+      <page-footer></page-footer>
+
     </article>
 
     <!-- at the end to avoid blocking page load -->
