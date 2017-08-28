@@ -70,21 +70,17 @@ section {
     width: auto;
     text-align: center;
   }
-    table th {
+    table thead {
+      margin-bottom: 0.3em;
+    }
+    table thead th {
       display: block;
       text-align: center;
+      height: 100%;
     }
   section .row {
     width: 100%;
     clear: both;
-  }
-
-  section .row.odd {
-    background-color: #ccc;
-  }
-
-  section .row.even {
-    background-color: #aaa;
   }
 
   section .counter {

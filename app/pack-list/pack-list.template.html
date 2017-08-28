@@ -1,6 +1,6 @@
-<div class="pack-list">
+<div class="pack-list container">
 
-  <table class="container">
+  <table class="table table-striped">
     <thead class="row">
         <tr class="col-4">
           <th>Pack Type</th>
@@ -14,24 +14,24 @@
     </thead>
     <tbody>
       <tr ng-repeat="pack in $ctrl.packList" class="row clear pack-id-{{pack.id}} {{pack.oddity}}">
-        <td class="col-4">
+        <td class="col-4 align-middle">
           <div class="">
-            <img class="" src="{{pack.art}}" alt="{{pack.fullname}}">
-            <p class="{{pack.name}}">{{pack.name}}</p>
+            <img class="pack-art" src="{{pack.art}}" alt="{{pack.fullname}}">
+            <p class="{{pack.name}}"><span class="badge badge-primary">{{pack.name}}</span</p>
             <p>{{pack.fullname}}</p>
           </div>
         </td>
-        <td class="col-2">
-          <p class="counter">
+        <td class="col-2 align-middle">
+          <p class="counter label label-default">
             {{pack.counter}}
           </p>
         </td>
-        <td class="col-6">
+        <td class="col-6 align-middle">
           <p>
               As a maximum, in {{40 - pack.counter}} packs from {{pack.name}} you will a legendary card.
           </p>
-          <button ng-click="increment(pack)" class="no-legendary">No Legendary</button>
-          <button ng-click="legendary(pack)" class="legendary">Legendary</button>
+          <button ng-click="increment(pack)" class="btn btn-lg btn-primary no-legendary">No Legendary</button>
+          <button ng-click="legendary(pack)" class="btn btn-lg btn-success legendary">Legendary</button>
         </td>
       </tr>
     </tbody>

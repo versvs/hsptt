@@ -21,13 +21,6 @@ angular.
             console.log("Type of stored counter: " + typeof self.packList[i].name);
             console.log("iterating thru packList");
           };
-          // add `even` or `odd` element to elements in packList, to ease the styling
-          if (self.packList[i].id % 2) {
-            self.packList[i].oddity = "odd";
-          } else {
-            self.packList[i].oddity = "even";
-          }
-
         }
       });
       $scope.increment = function(pack) {
