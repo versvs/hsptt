@@ -78,6 +78,13 @@ section {
       text-align: center;
       height: 100%;
     }
+    table tbody img {
+      max-width: 90px;
+    }
+    table tbody p.set-code {
+      font-size: 1.3em;
+      margin-bottom: 0em;
+    }
   section .row {
     width: 100%;
     clear: both;
