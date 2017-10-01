@@ -4,42 +4,49 @@
     "name": "KFT",
     "fullname": "Knights of the Frozen Throne",
     "art": "app/pack-list/images/kft.png",
-    "counter": 0
+    "counter": 0,
+    "standard": true
   }, {
     "id": 5,
     "name": "JTU",
     "fullname": "Journey to Un\"goro",
     "art": "app/pack-list/images/jtu.png",
-    "counter": 0
+    "counter": 0,
+    "standard": true
   }, {
     "id": 4,
     "name": "MSG",
     "fullname": "Mean Streets of Gadgetzan",
     "art": "app/pack-list/images/msg.png",
-    "counter": 0
+    "counter": 0,
+    "standard": true
   }, {
     "id": 3,
     "name": "WOG",
     "fullname": "Whispers of the Old Gods",
     "art": "app/pack-list/images/wog.png",
-    "counter": 0
+    "counter": 0,
+    "standard": true
   }, {
     "id": 2,
     "name": "TGT",
     "fullname": "The Grand Tournament",
     "art": "app/pack-list/images/tgt.png",
-    "counter": 0
+    "counter": 0,
+    "standard": false
   }, {
     "id": 1,
     "name": "GVG",
     "fullname": "Goblins vs Gnomes",
     "art": "app/pack-list/images/gvg.png",
-    "counter": 0
+    "counter": 0,
+    "standard": false
   }, {
     "id": 0,
     "name": "CLA",
     "fullname": "Classic Expansion, the original card set",
     "art": "app/pack-list/images/classic.png",
-    "counter": 0
+    "counter": 0,
+    "standard": true
   }
 ]
