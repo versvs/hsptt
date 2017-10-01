@@ -13,7 +13,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr ng-repeat="pack in $ctrl.packList" class="row clear pack-id-{{pack.id}} {{pack.oddity}}">
+      <tr ng-repeat="pack in $ctrl.packList | filter:$ctrl.packFilter" class="row clear pack-id-{{pack.id}} {{pack.oddity}}">
         <td class="col-4 align-middle">
           <div class="">
             <img class="pack-art" src="{{pack.art}}" alt="{{pack.fullname}}">
