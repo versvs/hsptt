@@ -6,7 +6,7 @@ angular.
   component('packList', {
     templateUrl: 'app/pack-list/pack-list.template.html',
     styleUrls: ['app/pack-list/pack-list.css'],
-    controller: function PackListController($http, $scope) {
+    controller: function PackListController($http, $scope, $rootScope) {
       var self = this;
       self.orderProp = 'id';
       $http.get('app/pack-list/pack-list.json').then(function(response) {
@@ -23,6 +23,7 @@ angular.
           };
         }
       });
+      // increment and reset of counters
       $scope.increment = function(pack) {
         pack.counter += 1;
         console.log("Pack Number Incremented");
@@ -35,5 +36,9 @@ angular.
         localStorage.setItem(pack.name, pack.counter);
         console.log(pack.name + '=', pack.counter);
       }
+      // event listening
+      $rootScope.$on("searchquery:packs", function (event, data) {
+        self.packFilter = data;
+      });
     }
   });
