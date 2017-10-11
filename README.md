@@ -1,6 +1,6 @@
 # hsptt
 
-Hearthstone Pity Timer Tracker (hsptt) v0.4.0
+Hearthstone Pity Timer Tracker (hsptt) v0.4.1
 
 # License
 
@@ -19,4 +19,4 @@ HSPTT uses the following libraries:
 Regarding Hearthstone:
 
 * Hearthstone is a trademark from Blizzard Entertainment
-* The art for the card packs is property of Blizzard Entertainment
+* The art for the card packs and the HearthStone icon are property of Blizzard Entertainment
