@@ -27,14 +27,14 @@
           </p>
         </td>
         <td class="col-6 align-middle">
-          <div ng-if="pack.isReleased">
+          <div ng-if="pack.isReleased"  class="released-set">
             <p>
                 As a maximum, in {{40 - pack.counter}} packs from {{pack.name}} you will a legendary card.
             </p>
             <button ng-click="increment(pack)" class="btn btn-lg btn-primary no-legendary">No Legendary</button>
             <button ng-click="legendary(pack)" class="btn btn-lg btn-success legendary">Legendary</button>
           </div>
-          <p ng-if="!pack.isReleased">
+          <p ng-if="!pack.isReleased" class="unreleased-set">
             This set has not been released yet!
             <br>
             <i>Soon!<sup>(tm)</sup></i>

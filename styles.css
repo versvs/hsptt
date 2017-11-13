@@ -85,6 +85,11 @@ section {
       font-size: 1.3em;
       margin-bottom: 0em;
     }
+
+    table tbody p.unreleased-set {
+      color: red;
+      font-size: 1.6em;
+    }
   section .row {
     width: 100%;
     clear: both;
