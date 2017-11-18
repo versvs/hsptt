@@ -1,0 +1,55 @@
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="fa fa-cog" aria-hidden="true"></i> Settings
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#" ng-click="exportSettings()">Export</a>
+    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#importSettingsModal">Import</a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#clearSettingsModal">Reset all!</a>
+  </div>
+</div>
+
+
+<!-- dialog for import settings -->
+<div id="importSettingsModal" class="modal fade">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Import Settings</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <input type="file" id="file" name="file"/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" ng-click="importSettings()">Import!</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- dialog for clearing settings -->
+<div id="clearSettingsModal" class="modal fade">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Confirm</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Please, confirm you want to reset the settings.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" ng-click="clearSettings()">Confirm</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Nope!</button>
+      </div>
+    </div>
+  </div>
+</div>

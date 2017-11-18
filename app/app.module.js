@@ -3,5 +3,6 @@ angular.module('hspttApp', [
   //dependencies
   'packList',
   'navigation',
-  'pageFooter'
+  'pageFooter',
+  'actionsMenu'
 ]);

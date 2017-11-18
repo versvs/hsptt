@@ -52,7 +52,7 @@ article {
 }
   article h2.row {
     font-size: 2em;
-    margin: 0 auto;
+    margin: 0 auto 1em auto;
     font-weight:200;
     display: block;
     text-align: center;
@@ -84,6 +84,11 @@ section {
     table tbody p.set-code {
       font-size: 1.3em;
       margin-bottom: 0em;
+    }
+
+    table tbody p.unreleased-set {
+      color: red;
+      font-size: 1.6em;
     }
   section .row {
     width: 100%;

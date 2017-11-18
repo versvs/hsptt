@@ -1,52 +1,68 @@
 [
   {
+    "id": 7,
+    "name": "KOB",
+    "fullname": "Kobolds and Catacombs",
+    "art": "app/pack-list/images/kob.png",
+    "counter": 0,
+    "standard": true,
+    "release": "2017-12-07"
+  },
+  {
     "id": 6,
     "name": "KFT",
     "fullname": "Knights of the Frozen Throne",
     "art": "app/pack-list/images/kft.png",
     "counter": 0,
-    "standard": true
+    "standard": true,
+    "release": "2017-08-10"
   }, {
     "id": 5,
     "name": "JTU",
     "fullname": "Journey to Un\"goro",
     "art": "app/pack-list/images/jtu.png",
     "counter": 0,
-    "standard": true
+    "standard": true,
+    "release": "2017-04-06"
   }, {
     "id": 4,
     "name": "MSG",
     "fullname": "Mean Streets of Gadgetzan",
     "art": "app/pack-list/images/msg.png",
     "counter": 0,
-    "standard": true
+    "standard": true,
+    "release": "2016-12-01"
   }, {
     "id": 3,
     "name": "WOG",
     "fullname": "Whispers of the Old Gods",
     "art": "app/pack-list/images/wog.png",
     "counter": 0,
-    "standard": true
+    "standard": true,
+    "release": "2016-04-26"
   }, {
     "id": 2,
     "name": "TGT",
     "fullname": "The Grand Tournament",
     "art": "app/pack-list/images/tgt.png",
     "counter": 0,
-    "standard": false
+    "standard": false,
+    "release": "2015-08-24"
   }, {
     "id": 1,
     "name": "GVG",
     "fullname": "Goblins vs Gnomes",
     "art": "app/pack-list/images/gvg.png",
     "counter": 0,
-    "standard": false
+    "standard": false,
+    "release": "2014-12-08"
   }, {
     "id": 0,
     "name": "CLA",
     "fullname": "Classic Expansion, the original card set",
     "art": "app/pack-list/images/classic.png",
     "counter": 0,
-    "standard": true
+    "standard": true,
+    "release": "2014-03-11"
   }
 ]
