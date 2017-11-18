@@ -21,6 +21,17 @@ angular.
             console.log("Type of stored counter: " + typeof self.packList[i].name);
             console.log("iterating thru packList");
           };
+          // check & set if set has been released
+          var currentDate = new Date();
+          console.log("currentDate: " + currentDate);
+          var releaseDate = new Date(self.packList[i].release);
+          console.log("releaseDate: " + releaseDate);
+          if ( releaseDate > currentDate) {
+            self.packList[i].isReleased = false;
+          } else {
+            self.packList[i].isReleased  = true;
+          }
+          console.log(self.packList[i].name + ", is released? " + self.packList[i].release);
         }
       });
       // increment and reset of counters

@@ -17,21 +17,29 @@
         <td class="col-4 align-middle">
           <div class="">
             <img class="pack-art" src="{{pack.art}}" alt="{{pack.fullname}}">
-            <p class="set-code {{pack.name}}"><span class="badge badge-primary">{{pack.name}}</span</p>
+            <p class="set-code {{pack.name}}"><span class="badge badge-primary">{{pack.name}}</span></p>
             <p>{{pack.fullname}}</p>
           </div>
         </td>
         <td class="col-2 align-middle">
-          <p class="counter label label-default">
+          <p ng-if="pack.isReleased" class="counter label label-default">
             {{pack.counter}}
           </p>
         </td>
         <td class="col-6 align-middle">
-          <p>
-              As a maximum, in {{40 - pack.counter}} packs from {{pack.name}} you will a legendary card.
+          <div ng-if="pack.isReleased"  class="released-set">
+            <p>
+                As a maximum, in {{40 - pack.counter}} packs from {{pack.name}} you will a legendary card.
+            </p>
+            <button ng-click="increment(pack)" class="btn btn-lg btn-primary no-legendary">No Legendary</button>
+            <button ng-click="legendary(pack)" class="btn btn-lg btn-success legendary">Legendary</button>
+          </div>
+          <p ng-if="!pack.isReleased" class="unreleased-set">
+            This set has not been released yet!
+            <br>
+            <i>Soon!<sup>(tm)</sup></i>
           </p>
-          <button ng-click="increment(pack)" class="btn btn-lg btn-primary no-legendary">No Legendary</button>
-          <button ng-click="legendary(pack)" class="btn btn-lg btn-success legendary">Legendary</button>
+
         </td>
       </tr>
     </tbody>
