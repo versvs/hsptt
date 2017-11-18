@@ -42,14 +42,18 @@
 
     <article>
       <header class="container">
-        <h2 class="row">Keep track of all your pity timers in one place</h2>
-        <p id="how">
-          HearthStone Pity Time Tracker stores all the information in your browser.
-          We do not store your data in our servers, and if you delete your browser history, your data will also be lost, so... be careful!
-        </p>
-        <!-- Actions Menu -->
-        <actions-menu></actions-menu>
-        <!-- End Actions Menu -->
+        <h2 id="claim" class="row">Keep track of all your pity timers in one place</h2>
+        <div class="row">
+          <p id="how" class="col-10">
+            HearthStone Pity Time Tracker stores all the information in your browser.
+            We do not store your data in our servers, and if you delete your browser history, your data will also be lost, so... be careful!
+          </p>
+          <div class="col-2">
+            <!-- Actions Menu -->
+            <actions-menu></actions-menu>
+            <!-- End Actions Menu -->
+          </div>
+        </div>
       </header>
 
       <section>
@@ -61,6 +65,9 @@
     </article>
 
     <!-- at the end to avoid blocking page load -->
+    <script src="lib/jquery-3.1.1.slim.min.js"></script>
+    <script src="lib/tether.min.js"></script>
+    <script src="lib/popper.min.js"></script>
     <script src="lib/bootstrap.min.js"></script>
 
   </body>

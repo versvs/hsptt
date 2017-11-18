@@ -52,7 +52,7 @@ article {
 }
   article h2.row {
     font-size: 2em;
-    margin: 0 auto;
+    margin: 0 auto 1em auto;
     font-weight:200;
     display: block;
     text-align: center;
