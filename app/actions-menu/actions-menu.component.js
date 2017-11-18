@@ -25,14 +25,37 @@ angular.
 
 
       $scope.importSettings = function() {
+        console.log("Starting to import settings");
+        var f = document.getElementById('file').files[0],
+            r = new FileReader();
+
+        r.onloadend = function(e) {
+          var importedSettings = e.target.result;
+          try {
+            var importedSettingsJSON = JSON.parse(importedSettings);
+          } catch (error) {
+            console.error("There was an error parsing the imported file with JSON" + error);
+          }
+
+          for (var key in importedSettingsJSON) {
+              localStorage.setItem(key, importedSettingsJSON[key]);
+              console.log("adding " + key + " to localStorage with value: " + importedSettingsJSON[key]);
+          }
+          // reload the page after importing
+          location.reload();
+
+
+
+        }
+        // investigation is needed to know why the import fails when this is not present
+        // even though we're not doing nothing with this
+        r.readAsBinaryString(f);
 
       }
 
       $scope.clearSettings = function() {
-        // we should ask for confirmation before actually clearing everything
         localStorage.clear();
         // a more elegant solution will be used in the final version
-        alert("The settings have been reset! Page will be reloaded now");
         location.reload();
 
       }
