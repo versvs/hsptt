@@ -1,3 +1,9 @@
+0.5.1-RELEASE (2017-11-30)
+==========================
+
+* Kobolds and Catacombs shortname now reads K&C, as it has been adopted by the community
+
+
 0.5.0-RELEASE (2017-11-18)
 ==========================
 
@@ -49,5 +55,3 @@ First usable version. Only Basic functionality provided.
 
 * List of all available card pack types.
 * Local Storage for pack counters.
-
-
