@@ -99,6 +99,10 @@ section {
     font-size: 5em;
   }
 
+  nav.navbar actions-menu {
+    margin-right: 5px;
+  }
+
   #footer {
   	background-color: #373a48;
   	color:white;

@@ -1,3 +1,3 @@
 'use strict';
 // Define the pack list module
-angular.module('navigation', []);
+angular.module('navigation', ['actionsMenu']);
