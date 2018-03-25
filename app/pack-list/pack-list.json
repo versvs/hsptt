@@ -41,7 +41,7 @@
     "fullname": "Mean Streets of Gadgetzan",
     "art": "app/pack-list/images/msg.png",
     "counter": 0,
-    "standard": true,
+    "standard": false,
     "release": "2016-12-01"
   },
   {
@@ -50,7 +50,7 @@
     "fullname": "Whispers of the Old Gods",
     "art": "app/pack-list/images/wog.png",
     "counter": 0,
-    "standard": true,
+    "standard": false,
     "release": "2016-04-26"
   },
   {
