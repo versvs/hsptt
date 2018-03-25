@@ -1,10 +1,10 @@
 # hsptt
 
-Hearthstone Pity Timer Tracker (hsptt) v0.5.2
+Hearthstone Pity Timer Tracker (hsptt) v0.6.0-SNAPSHOT
 
 # License
 
-Copyrigt (c) 2017, Jose Alcántara, http://www.versvs.net
+Copyrigt (c) 2018, Jose Alcántara, http://www.versvs.net
 
 hsptt is free software under the Apache License 2.0. Full text of this license may be found in the LICENSE file in this folder
 
