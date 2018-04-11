@@ -1,3 +1,11 @@
+0.6.0-RELEASE (2018-04-11)
+==========================
+
+* Support for The Witchwood (shorted WIT)
+* WOG and MSG packs are now Wild-only sets
+* The art for The Witchwood packs is still missing. I will add it in a release update asap
+
+
 0.5.2-RELEASE (2017-12-08)
 ==========================
 
