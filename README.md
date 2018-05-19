@@ -1,6 +1,6 @@
 # hsptt
 
-Hearthstone Pity Timer Tracker (hsptt) v0.6.0-RELEASE
+Hearthstone Pity Timer Tracker (hsptt) v0.6.1-RELEASE
 
 # License
 
