@@ -1,5 +1,14 @@
 [
   {
+    "id": 9,
+    "name": "TBP",
+    "fullname": "The Boomsday Project",
+    "art": "app/pack-list/images/tbp.png",
+    "counter": 0,
+    "standard": true,
+    "release": "2018-08-07"
+  },
+  {
     "id": 8,
     "name": "WIT",
     "fullname": "The Witchwood",
