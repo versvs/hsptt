@@ -1,5 +1,14 @@
 [
   {
+    "id": 10,
+    "name": "RR",
+    "fullname": "Rastakhan's Rumble",
+    "art": "app/pack-list/images/rr.png",
+    "counter": 0,
+    "standard": true,
+    "release": "2018-12-04"
+  },
+  {
     "id": 9,
     "name": "TBP",
     "fullname": "The Boomsday Project",

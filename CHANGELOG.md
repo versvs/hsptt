@@ -1,3 +1,10 @@
+0.8.0-RELEASE (2018-12-02)
+==========================
+
+* Support for Rastakhan's Rumble
+* Provisional art for the new RR card pack (lower resolution than the others)
+
+
 0.7.0-RELEASE (2018-08-05)
 ==========================
 
