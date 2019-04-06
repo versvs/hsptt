@@ -1,3 +1,10 @@
+0.9.0-RELEASE (2018-12-02)
+==========================
+
+* Support for Rise of the Shadows (1st expansion of 2019). Art will be added in a future fix.
+* Journey to Ungoro, Knights of the Frozen Throne, and Kobolds and Catacombs are now marked as Wild-only sets
+* Blue Oak License 1.0.0 has replaced Apache License 2.0; both are somewhat the same, but Blue Oak is does a better job in protecting both the user and the contributor of the software
+
 0.8.0-RELEASE (2018-12-02)
 ==========================
 

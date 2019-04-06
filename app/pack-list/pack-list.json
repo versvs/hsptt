@@ -1,5 +1,14 @@
 [
   {
+    "id": 11,
+    "name": "ROS",
+    "fullname": "Rise of the Shadows",
+    "art": "",
+    "counter": 0,
+    "standard": true,
+    "release": "2019-04-09"
+  },
+  {
     "id": 10,
     "name": "RR",
     "fullname": "Rastakhan's Rumble",
@@ -32,7 +41,7 @@
     "fullname": "Kobolds and Catacombs",
     "art": "app/pack-list/images/kob.png",
     "counter": 0,
-    "standard": true,
+    "standard": false,
     "release": "2017-12-07"
   },
   {
@@ -41,7 +50,7 @@
     "fullname": "Knights of the Frozen Throne",
     "art": "app/pack-list/images/kft.png",
     "counter": 0,
-    "standard": true,
+    "standard": false,
     "release": "2017-08-10"
   },
   {
@@ -50,7 +59,7 @@
     "fullname": "Journey to Un\"goro",
     "art": "app/pack-list/images/jtu.png",
     "counter": 0,
-    "standard": true,
+    "standard": false,
     "release": "2017-04-06"
   },
   {
