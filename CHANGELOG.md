@@ -1,4 +1,9 @@
-0.9.0-RELEASE (2018-12-02)
+0.9.0-RELEASE (2019-04-14)
+==========================
+
+* Corrected art for RR and ROS.
+
+0.9.0-RELEASE (2019-04-05)
 ==========================
 
 * Support for Rise of the Shadows (1st expansion of 2019). Art will be added in a future fix.

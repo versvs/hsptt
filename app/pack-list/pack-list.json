@@ -3,7 +3,7 @@
     "id": 11,
     "name": "ROS",
     "fullname": "Rise of the Shadows",
-    "art": "",
+    "art": "app/pack-list/images/ros.png",
     "counter": 0,
     "standard": true,
     "release": "2019-04-09"
