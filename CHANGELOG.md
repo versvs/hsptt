@@ -1,4 +1,10 @@
-0.9.0-RELEASE (2019-04-14)
+0.10.0-RELEASE (2019-08-06)
+==========================
+
+* Support for Saviors of Uldum (2nd expansion of 2019).
+
+
+0.9.1-RELEASE (2019-04-14)
 ==========================
 
 * Corrected art for RR and ROS.
